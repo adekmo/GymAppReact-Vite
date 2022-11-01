@@ -6,8 +6,8 @@ const ExerciseVideos = ({ exerciseVideo, name }) => {
     if (!exerciseVideo.length) return 'Loading...';
     return (
         <Box sx={{ marginTop : {lg : '200px', xs: '20px'}}} p="20px">
-            <Typography variant="h3" mb="33px">
-                Watch <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>{name}</span> exercise videos
+            <Typography variant="h3" mb="33px" color="#fef2f2">
+                Watch <span style={{ color: '#dc2626', textTransform: 'capitalize' }}>{name}</span> exercise videos
             </Typography>
             <Stack justifyContent="flex-start" flexWrap="wrap" aligntItems="center" sx={{
                 flexDirection: { lg: 'row'},
@@ -17,10 +17,10 @@ const ExerciseVideos = ({ exerciseVideo, name }) => {
                     return (
                         <a key={index} className="exercise-video" href={`https://www.youtube.com/watch?v=${item.video.videoId}`} target="_blank" rel="noreferrer">
                             <img src={item.video.thumbnails[0].url} alt={item.video.title} />
-                            <Typography variant="h5" color="#000">
+                            <Typography variant="h5" color="#fef2f2">
                                 {item.video.title}
                             </Typography>
-                            <Typography variant="h6" color="#000">
+                            <Typography color="#fef2f2" variant="h6">
                                 Channel : {item.video.channelName}
                             </Typography>
                         </a>

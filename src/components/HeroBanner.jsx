@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
-import Banner from '../assets/images/banner.png'
+import Banner from '../assets/images/new-Banner.jpg'
 
 const HeroBanner = () => {
     return (
@@ -8,22 +8,22 @@ const HeroBanner = () => {
             mt: {lg: '212px', xs: '70px'},
             ml: {sm: '50px'}
         }} position="relative" p="20px">
-            <Typography color="#FF2625" fontWeight="600" fontSize="26px">
-                Fitness Club
+            <Typography color="#dc2626" fontWeight="700" fontSize="28px">
+                Deks-Fitness Club
             </Typography>
-            <Typography fontWeight="700" sx= {{
+            <Typography color="#fef2f2" fontWeight="700" sx= {{
                 fontSize: { lg: '44px', xs: '40px'}
             }}  mb="23px" mt="30px">
-                Sweat, Smile <br></br>
-                and Repeat
+                Gain your Muscle <br></br>
+                and Be a Monster
             </Typography>
-            <Typography fontSize='22px' lineHeight='35px' mb={4}>
+            <Typography fontSize='22px' color="#fef2f2" lineHeight='35px' mb={4}>
                 Check out the most effective exercises
             </Typography>
             <Button variant="contained" color="error" href="#exercises"
             sx={{ backgroundColor: '#FF2625', padding: '10px'}}>Explore Exercise</Button>
             <Typography fontWeight="600"
-            color="#FF2625"
+            color="#dc2626"
             sx ={{
                 opacity: 0.1,
                 display: {lg : 'block', xs: 'none'}
